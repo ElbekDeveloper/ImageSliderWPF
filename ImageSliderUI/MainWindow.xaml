@@ -6,7 +6,14 @@
         xmlns:local="clr-namespace:ImageSliderUI"
         mc:Ignorable="d"
         Title="" Height="450" Width="800" Icon="monitor.png">
-    <Grid>
-        
+    <Grid Background="#FFC59F9F">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Name="picHolder" Source="pics/1.jpg" Grid.Column="1"/>
+        <Button Click="Back" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="20 10 20 10">Back</Button>
+        <Button Click="Next" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="20 10 20 10">Next</Button>
     </Grid>
 </Window>
